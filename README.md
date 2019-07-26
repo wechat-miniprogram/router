@@ -51,7 +51,7 @@ Page({
 | 属性名                   | 类型         | 默认值                    | 是否必须    | 说明                                        |
 |-------------------------|--------------|---------------------------|------------|---------------------------------------------|
 | url                   | String       | 显示屏幕的宽度             | 是          | 当前小程序内的跳转链接                    |
-| open-type                  | String       | Navigate                        | 否        |  跳转方式                    |
+| open-type                  | String       | navigate                        | 否        |  跳转方式                    |
 |delta             | Number       | 1                        | 否          | 当 open-type 为 'navigateBack' 时有效，表示回退的层数|
 |query             | Object       |                        | 否          | 追加到跳转链接上的query string|
 |params             | Object       |                         | 否          |动态路径参数|
