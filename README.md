@@ -1,9 +1,31 @@
+
+
 # router
 
 小程序自定义组件
 
 > 使用此组件需要依赖小程序基础库 2.2.1 以上版本，同时依赖开发者工具的 npm 构建。具体详情可查阅[官方 npm 文档](https://developers.weixin.qq.com/miniprogram/dev/devtools/npm.html)。
+ 
+## 功能描述
 
+
+1. 提供 query 拼装功能
+
+  `<router url="test/:docid?id=1" query="{{queryData}}">test</router>`
+
+ queryData中的键值对会拼接到跳转的url中
+
+2. 提供跳转前/跳转后回调函数
+
+3. 提供 params 动态拼接路由
+
+ `<router url="test/:docid?id=1" params="{{paramsData}}">test</router>`
+ 
+  ` paramsData: {
+    docid: '1'
+  }`
+
+实际跳转的url将会是`test/1?id=1`  
 
 ## 使用方法
 
